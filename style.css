@@ -178,21 +178,53 @@ progress{
 /*todasPlaylist*/
 .playlist-coluna{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.playlist-coluna a {
+    text-decoration: none;
+    color: black;
 }
 .card-playlist-flex{
     background-color: #333;
     display: flex;
     flex-direction: row;
-    height: 50px;
+    justify-content: space-between;
+    height: 55px;
+
+    width: 380px;
+
+    margin-top: 15px;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-bottom: 3px;
 }
 .container-playlist{
     height: 40px;
-    margin-top: 5px;
-    width: 280px;
+    margin-top: 7px;
 }
 .container-playlist img{
     height: 100%;
+    border-radius: 5px;
+}
+.mandar-esquerda{
+    padding-right: 12px;
+    margin: auto 0px;
+    font-family: Arial;
+}
+.container-btn-play{
+    width: 80px;
+    height: 80px;
+    background-color: #363636;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.container-btn-play i {
+    margin: 20% 28%;
 }
 
 /*Botão*/
