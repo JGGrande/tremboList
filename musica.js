@@ -80,6 +80,10 @@ function atualizarBarra(){
         //console.log(musica.duration)
         let tempoDecorrido = document.querySelector('.inicioMusica');
         tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
+        if(musica.currentTime === musica.duration){
+            indexMusica++
+            renderizarMusica(indexMusica)
+        }
 
     })
     
